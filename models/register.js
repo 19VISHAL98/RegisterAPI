@@ -10,9 +10,21 @@ const Register = new mongoose.Schema({
     type: String,
     required: true,
   },
-  address: {
-    type: Object,
-    required: true,
+  currentAddress:{
+    type:String,
+    required:true,
+  },
+  currentDistrict:{
+    type:String,
+    required:true,
+  },
+  permanentAddress:{
+    type:String,
+    // required:true,
+  },
+  permanentDistrict:{
+    type:String,
+    // required:true,
   },
   email: {
     type: String,
@@ -22,7 +34,7 @@ const Register = new mongoose.Schema({
     type: Date,
     required: true,
   },
-  document:{
+  documents:{
     type : Object,
     required: true,
   }

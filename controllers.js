@@ -30,10 +30,10 @@ const createUser = async(req, res) => {
 
        const data = new register(req.body);
        await data.save();
-       return res.status(200).send({msg : "insert successfully"})
+       return res.status(200).send({msg : "Registration Completed",status:true})
 
     }catch(err){
-        return res.status(400).send({Errer:err})
+        return res.status(400).send({Errer:err,status:false})
     }
     
   };
